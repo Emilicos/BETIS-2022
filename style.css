@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline:none;
+}
+
+body{
+    margin: 0;
+    background-color:#F5F6FA;
+}
+
+.container{
+    width:min(90%, 70.5rem);
+}
+
+section{
+    padding: 4rem 0;
+    box-sizing: border-box;
+}
+
+.header-section{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color:white;
+    padding: 4rem 0;
+}
+
+.call-to-action{
+    display:flex;
+    flex-direction:column;
+    margin-inline:1em;
+    justify-content: center;
+}
+
+.call-to-action img{
+    display:block;
+    max-width:100%; 
+    margin:auto;
+    text-align: center;
+}
+
+.kalimat{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action h1{
+    display: none;
+    color:#5B6A00;
+    font-size:52px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.call-to-action p{
+    color: #8A8A8A;
+    font-size:1.125rem;
+    padding-top: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.u-centered{
+    width:100%;
+    max-width:1200px;
+    margin: 0 auto;
+    padding:1em;
+    box-sizing: border-box;
+}
+
+.bar{
+    position: absolute;
+    top: 0;
+    left: 15;
+    width:100%;
+    height: 4.125rem;
+    background-color: white; 
+}
+
+.bar__content{
+    height:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar__logo{
+    height:100%;
+}
+
+.bar__nav-toggle{
+    cursor:pointer;
+}
+
+.bar__nav-toggle > i{
+    color:#5B6A00;
+}
+
+#inpNavToggle{
+    display:none;
+}
+#inpNavToggle:checked ~ .nav{
+    display:flex;    
+}
+
+.nav{
+    display:none;
+    flex-direction: column;
+    position:fixed;
+    top:4em;
+    left: 0;
+    width:100%;
+    height:calc(100vh - 72px);
+    padding:2em;
+    background-color:#5B6A00;
+    box-sizing:border-box; 
+}
+
+.nav__link{
+    font-weight:500;
+    padding:1em 0;
+    text-decoration: none;
+    color:#8A8A8A;
+    font-family: 'Kanit', sans-serif;
+    transition: ease-in-out 0.3s;
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+    color:#5B6A00;
+    font-weight:bold;
+}
+
+.log-in{
+    font-family: 'Kanit', sans-serif;
+    background-color: #5B6A00;
+    width: 10rem;
+    height:2.5rem;
+    border:none;
+    border-radius: 3px;
+    font-size:1rem;
+    color:white;
+    margin-left:4em;
+    cursor:pointer;
+    transition: ease-in 0.5s;
+}
+
+.log-in:hover{
+    opacity:0.9;
+}
+
+.page2{
+    background-color: #F5F6FA;
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.visi-misi{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.visi-misi h2{
+    font-family: 'Kanit', sans-serif;
+    font-size:2.25rem;
+    color: #5B6A00;
+}
+
+.visi-misi p{
+    display:none;
+    font-size:1.125rem;
+    padding-top: 1em;
+    max-width:55rem;
+    font-family: 'Poppins', sans-serif;    
+    color: #8A8A8A;
+}
+
+.sarana{
+    display:grid;
+    gap: 1em;
+    max-width: 77rem;
+    max-height: 37rem;
+    padding-top:3.75em;
+}
+
+.opsi{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    max-width:100%;
+}
+
+.gambar{
+    height: 4.9375rem;
+    width: 4.9375rem;
+    border-radius: 50%;
+    background-color: #EAFAF3;
+    position: relative;
+}
+
+.opsi img{
+    padding: 2em 2em 0em 2em;
+}
+
+.opsi h3,p{
+    padding-left:2em;
+    padding-right:2em;
+}
+.opsi h3{
+    color:#5B6A00;
+    font-size:1.125rem;
+    font-family: 'Kanit', sans-serif;
+    padding-top:2em;
+}
+
+.opsi p{
+    color: #8A8A8A;
+    font-size:1.125rem;
+    font-family: 'Poppins', sans-serif;
+    padding-top:0.83em;
+    padding-bottom:2.2em;
+}
+
+.social-media{
+    display:flex;
+    height:28.9375rem;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.follow, .email, .location{
+    background-color:#F5F6FA;
+}
+
+.social{
+    display:flex;
+    justify-content: center;
+    margin-bottom:3em;
+}
+
+.media{
+    padding-top:2em;
+    color: #8A8A8A;
+    cursor:pointer;
+}
+
+.instagram{
+    margin-right:1em;
+}
+.youtube{
+    margin-left:1em;
+}
+
+
+.gmail{
+    display:none;
+}
+
+.keterangan-email{
+    padding-bottom:3em;
+}
+
+.keterangan-email h4{
+    padding-bottom:1em;
+}
+
+.gps{
+    display:none;
+}
+
+.keterangan-location{
+    max-width:20.5rem;
+}
+
+.keterangan-location h4{
+    padding-bottom:1em;
+}
+
+.white-space{
+    visibility: hidden;
+    padding-top:30em;
+    background-color: #F5F6FA;
+}
+
+.footer-section{
+    background-color: #F5F6FA;
+}
+
+.decoration{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media screen and (min-width: 744px){
+    .bar__nav-toggle{
+        display:none;
+    }
+
+    .nav{
+        display:initial;
+        position:static;
+        width:unset;
+        height:unset;
+        padding:unset;
+        background:transparent;
+    }
+
+    .nav__link{
+        border-bottom: none;
+    }
+
+    .nav__link:not(:last-of-type){
+        margin-right:4.5em;
+    }
+
+    .call-to-action{
+        flex-direction: row;
+    }
+    .call-to-action > *{
+        flex-basis: 100%;
+    }
+
+    .width-test{
+        width:50%;
+    }
+    .call-to-action > * + *{
+        margin-left:2em;
+    }
+
+    .call-to-action h1{
+        display:initial;
+    }
+    .visi-misi p{
+        display:initial;
+    }
+
+    .kalimat{
+        max-width:31rem;
+    }
+    .sarana{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2em;
+    }
+    .page2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opsi{
+        display:initial;
+    }
+
+    .social-media{
+        flex-direction:row;
+        justify-content: space-around;
+        align-items:center;
+    }
+
+    .gmail{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .keterangan-email{
+        display: inline-block;
+    }
+    .social{
+        justify-content: stretch;
+    }
+    
+    .gps{
+        display:flex;
+        flex-direction: row;
+    }
+    .keterangan-location{
+        text-align: start;
+    }
+
+}   
