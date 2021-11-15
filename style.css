@@ -95,14 +95,6 @@ section{
     height:100%;
 }
 
-.nav-toggle{
-    cursor:pointer;
-}
-
-.nav-toggle{
-    color:#5B6A00;
-}
-
 .nav{
     display:none;
     flex-direction: column;
@@ -133,6 +125,7 @@ section{
 
 .material-icons{
     color:#5B6A00;
+    cursor:pointer;
 }
 
 .log-in{
