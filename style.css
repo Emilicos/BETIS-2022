@@ -95,19 +95,12 @@ section{
     height:100%;
 }
 
-.bar__nav-toggle{
+.nav-toggle{
     cursor:pointer;
 }
 
-.bar__nav-toggle > i{
+.nav-toggle{
     color:#5B6A00;
-}
-
-#inpNavToggle{
-    display:none;
-}
-#inpNavToggle:checked ~ .nav{
-    display:flex;    
 }
 
 .nav{
@@ -136,6 +129,10 @@ section{
     text-decoration: underline;
     color:#5B6A00;
     font-weight:bold;
+}
+
+.material-icons{
+    color:#5B6A00;
 }
 
 .log-in{
@@ -189,7 +186,6 @@ section{
     display:grid;
     gap: 1em;
     max-width: 77rem;
-    max-height: 37rem;
     padding-top:3.75em;
 }
 
@@ -242,6 +238,17 @@ section{
     justify-content: center;
 }
 
+.social-media h4{
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.social-media a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    color:#8A8A8A;
+}
 .follow, .email, .location{
     background-color:#F5F6FA;
 }
@@ -290,12 +297,6 @@ section{
     padding-bottom:1em;
 }
 
-.white-space{
-    visibility: hidden;
-    padding-top:30em;
-    background-color: #F5F6FA;
-}
-
 .footer-section{
     background-color: #F5F6FA;
 }
@@ -305,9 +306,17 @@ section{
     flex-direction: row;
     justify-content: space-between;
 }
-@media screen and (min-width: 1000px){
-    .bar__nav-toggle{
-        display:none;
+
+.decoration img{
+    display:block;
+    max-width:100%;
+    height:auto;
+    width: auto/9;
+}
+
+@media only screen and (min-width: 981px){
+    .material-icons{
+        visibility: hidden;
     }
 
     .nav{
@@ -369,26 +378,50 @@ section{
         flex-direction:row;
         justify-content: space-around;
         align-items:center;
+        text-align:initial;
     }
 
     .gmail{
-        display:flex;
-        flex-direction: row;
+        display:initial;
+        align-items: flex-start;
+        grid-area: "img";
+    }
+    .email{
+        display:grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: min-content auto;
+        grid-template-areas: "img title" 
+        "img text";
+        gap: 1em;
     }
 
-    .keterangan-email{
-        display: inline-block;
+    .keterangan-email h4{
+        grid-area: "title";
+    }
+    .keterangan-email a{
+        grid-area: "text";
     }
     .social{
         justify-content: stretch;
     }
+
+    .location{
+        display:grid;
+        grid-template-columns: 1fr 10fr;
+        grid-template-rows: min-content auto;
+        grid-template-areas: "img-2 title-2" "img-2 text-2";
+        gap:1em;
+    }
     
     .gps{
-        display:flex;
-        flex-direction: row;
+        display:initial;
+        grid-area: "img-2";
     }
-    .keterangan-location{
-        text-align: start;
+    .keterangan-location h4{
+        grid-area: "title-2";
     }
 
+    .keterangan-location a{
+        grid-area: "text-2";
+    }
 }   
